@@ -1,0 +1,10 @@
+Lav Tiny Tech Tutorial - simple WebApp i CDK, med
+- Website, 
+- udvidet DynamoDB, 
+- udvidet lambda (med adgang til dynamodb tabel),  
+- API Gateway, 
+- Cloudfront Web distribution 
+
+Istedet for Amplify, web siden (index.zip) deployes direkte,
+så laver vi en web distribution som en statis S3 website, som 
+publiceres på en Cloudfront distribution.

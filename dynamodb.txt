@@ -1,0 +1,25 @@
+arn:aws:dynamodb:eu-west-1:153065748672:table/PowerOfMathDatabase
+
+https://ebbpxugz6k.execute-api.eu-west-1.amazonaws.com/dev
+
+aws dynamodb describe-table --table-name PowerOfMathDatabase --profile mytestuser
+
+aws dynamodb get-item --table-name PowerOfMathDatabase --key '{"base": {"N": "2"}}'  --profile mytestuser
+
+❯ aws dynamodb get-item --table-name PowerOfMathDatabase --key '{"BASE": {"N": "2"}, "EXPONENT": {"N": "2"}}'  --profile mytestuser
+{
+    "Item": {
+        "LatestGreetingTime": {
+            "S": "Fri, 16 Jun 2023 11:18:03 +0000"
+        },
+        "EXPONENT": {
+            "N": "2"
+        },
+        "Result": {
+            "S": "4.0"
+        },
+        "BASE": {
+            "N": "2"
+        }
+    }
+}
